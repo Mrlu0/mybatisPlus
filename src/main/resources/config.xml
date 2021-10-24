@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+    <!--设置别名-->
+    <typeAliases>
+        <package name="实体类的包名"/>
+    </typeAliases>
+
+    <!--指定sql映射文件的位置-->
+    <mappers>
+        <!--一个mapper指定一个sql映射文件的位置
+            从类路径开始的路径信息 , 即在编译后的target/classes路径开始
+        -->
+        <!--<mapper resource="com/bjpowernode/dao/StudentDao.xml"/>-->
+        <package name="mapper文件的包名"/>
+    </mappers>
+</configuration>
