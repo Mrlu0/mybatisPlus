@@ -17,5 +17,6 @@ public class App
         System.out.println("master");
         System.out.println("hot-text");
         System.out.println("push test");
+        System.out.println("pull test");
     }
 }
